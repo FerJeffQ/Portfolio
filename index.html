@@ -4,27 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1>Fernando Quisaguano's Portfolio</h1>
-    <h2>I'm a Junior Web Developer</h2>
-    <hr />
+    <div class="container">
+        <div class="header">
+            <div id="name"> <a href="#">Fernando Quisaguano</a></div>
+            <div id="values">
+                <ul>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+    </div>
+        <div class="hero">
+            <div id="photo"><img src="./images/photo_profile.png" alt="Photo of profile"></div>
+            <div id="description"><p>I'm Fernando and I'm originally from Ecuador.
+                I am an Electronic Engineer and I have some experience with Web development, it is one of my biggest passions.</p></div>            
+        </div>  
+        <div class="Projects">
+            <div class="title">
+                <h1>Some Projects</h1>                
+            </div>
+            <div class="cont_projects">
+                <div class="sub_cont_pro">
+                    <img id="img_1" src="./images/dog.png">
+                    <p>this is some subtext under an illustration or image</p>    
+                </div>
+                <div class="sub_cont_pro">
+                    <img id="img_2" src="./images/youtube.png">
+                    <p>this is some subtext under an illustration or image</p>    
+                </div>                                                            
+            </div>
+        </div>                      
+        </div> 
+        <div class="Footer">
+            <footer>Copyright © Fernando 2023</footer>        
+        </div>  
+    </div>
     
-    <ul>
-        <li>
-            <h3><a href="./public/birthday-invite.html">Birthday Invite Project</a></h3>
-            <img src="./assets/images/birthday-invite.png" width="400"/>
-        </li>
-        <li>
-            <h3><a href="./public/movie-ranking.html">Movie Ranking Project</a></h3>
-            <img src="./assets/images/movie-ranking.png"/>
-        </li>
-    </ul>
-   
-    <hr/>
-    <a href="./public/about.html">About Me</a>
-    <br />
-    <a href="./public/contact.html">Contact</a>
-    
+
 </body>
 </html>
