@@ -71,9 +71,8 @@ a {
     align-items: center;
 }
 .cont_projects {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 60px;
     padding: 20px;
 }
@@ -82,14 +81,20 @@ a {
     height: 200px;
     border-radius: 10%;
 }
-.sub_cont_pro > #img_2 {
+.sub_cont_pro a > #img_2 {
     border-radius: 10%;
-    width: 340px;
+    width: 380px;
     height: 200px;
 }
 
 .sub_cont_pro > p {
     width: 200px;
+}
+
+.sub_cont_pro > img {
+    width: 100%;
+    height: auto;
+    border-radius: 10%;
 }
 
 .Footer {
@@ -125,6 +130,9 @@ a {
     }
     #description {
         font-size: 13px;
+    }
+    .cont_projects {
+        grid-template-columns: 1fr; /* o más columnas, según sea necesario */
     }
 
 }
